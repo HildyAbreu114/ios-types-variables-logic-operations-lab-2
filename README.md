@@ -21,6 +21,15 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 // your code here
+
+var yourGrade = 8.0
+
+
+var averageGrade = ( grade1 + grade2 + grade3 + yourGrade ) / 4
+if averageGrade > yourGrade {
+print ("Close but no cigar")
+} else if yourGrade > averageGrade {
+print ("You Rock")
 ```
 
 ***
@@ -32,6 +41,13 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
+
+
+if number % 2 == 0 {
+print  ("even")
+} else if number % 2 == 1{
+print ("odd")
+}
 ```
 
 ***
@@ -44,6 +60,13 @@ var a = 12
 var b = 3
 
 // code here
+
+
+if a % b == 0  {
+print ("divisible")
+} else {
+print ("not divisible")
+}
 ```
 
 ***
@@ -57,6 +80,13 @@ var b = 3
 var c = 2
 
 // your code here
+
+if a == b || a == c || b == c {
+print ("At least two variables have the same value")
+} else {
+print ("All the values are different")
+}
+
 ```
 
 ***
@@ -69,7 +99,17 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
-```
+var baconSpoil = 7
+var eggSpoil = 21
+if baconAge < baconSpoil && eggsAge < eggSpoil {
+print ("Cook eggs and bacon")
+} else if baconAge >= baconSpoil || eggsAge >= eggSpoil{
+print ("Throw both away")
+} else if baconAge>baconSpoil || eggsAge >= eggSpoil {
+print ("Throw bacon away eat eggs")
+} else if baconAge < baconSpoil || eggsAge >= eggSpoil {
+print ("Eat bacon throw away eggs")
+}```
 
 ***
 ## Question 6
@@ -80,7 +120,17 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+// your code herevar year = 2014
+
+if year % 400 == 0 {
+print ("Leap year")
+} else if year % 100 == 0 {
+print ("not Leap year")
+} else if year % 4 == 0 {
+print ("Leap year")
+} else {
+print ("not Leap year")
+}
 ```
 
 ***
@@ -88,11 +138,15 @@ let year = 2014
 
 If you use `random()` it will give you a random number within a specified range. Generate a random number and use it to simulate a coin toss. Print `"heads"` or `"tails"`.
 
-```swift
-let randomNum = Int.random(in: 0...100)
 
-// your code here
-```
+let randomNum = Int.random(in: 0...100)
+if randomNum % 2 == 0{
+print("heads")
+}
+else {
+print("Tails")
+}
+
 
 Hint: use an if/else block along with the `%` operator
 
@@ -109,5 +163,9 @@ var d = 4
 
 // your code here
 ```
+var arr = [ 5,6,3,4]
+var lowestNum = arr.min()
+print(lowestNum ?? 0)
+
 
 ***
