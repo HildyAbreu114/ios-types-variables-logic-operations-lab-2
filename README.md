@@ -7,7 +7,7 @@
 1. Complete the lab
 1. Push your changes to your Fork
 1. Submit a Pull Request back to the assignment repo
-1. Paste a link to of your Fork on Canvas and submit
+1. Paste a link to of your Fork on Canvas and submit 
 
 ## Question 1
 
@@ -15,7 +15,8 @@ You are given three grades obtained by 3 students, which are stored in variables
 Create a variable called `yourGrade` of type `Double` and give it a value.
 Print `"above average"` if your grade is greater than the class average or `"below average"` otherwise.
 
-```swift
+```
+swift
 var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
